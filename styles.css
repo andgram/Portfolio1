@@ -200,7 +200,7 @@
     margin-top: 1em;
   }
 
-  .card div {
+  .card-txt {
     padding: 0 1.2em;
   }
 
@@ -208,8 +208,19 @@
     margin-bottom: 2em;
   }
 
+  .image-container {
+    overflow: hidden;
+    width: 100%;
+  }
+
   .card img {
     width: 100%;
+    transition: 350ms ease;
+  }
+
+  .card img:hover {
+    transform: scale(1.07);
+    filter: brightness(0.8);
   }
 
   @media (max-width: 50em) {
