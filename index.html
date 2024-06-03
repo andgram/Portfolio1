@@ -9,45 +9,50 @@
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <div class="logo">AndGram</div>
-        </div>
-    </header>
 
     <!-- Hero section -->
     <section class="hero">
         <div class="container">
-            <h1>Front-End Developer
+            <div class="logo">AndGram</div>
+            <h1>Front-End Developer <br>
                 & Digital Designer</h1>
-            <p>I transform concepts into digital experiences.</p>
+            <p class="subhead">I transform concepts into digital experiences.</p>
             <button>Get in touch</button>
         </div>
     </section>
     <!-- End of Hero section -->
 
     <!-- My work section -->
-    <section>
+    <section class="work">
         <div class="container">
             <h2>My Work</h2>
-            <div class="cards">
+            <div class="cards ">
                 <div class="card">
-                    <h3>Museum website</h3>
+                    <img src="images/comunity-card.jpg" alt="">
+                    <div>
+                        <h3>Museum website</h3>
                     <p>This web project was developed to create an engaging, user-friendly science museum website,
                         balancing fun and education.</p>
                     <button>View Page</button>
+                    </div>
                 </div>
                 <div class="card">
-                    <h3>WatchWise CMS</h3>
+                    <img src="images/watchwise-card.jpg" alt="">
+                    <div>
+                        <h3>WatchWise CMS</h3>
                     <p>WatchWise is a front-end user interface for a blog and content management system (CMS) dedicated
                         to watches.</p>
                     <button>View Page</button>
+                    </div>
                 </div>
                 <div class="card">
+                    <img src="images/rainydays-card.jpg" alt="">
+                   <div>
                     <h3>Rainy Days</h3>
                     <p>RainyDays is a fictional rain jacket company. The main goal was to create a responsive design
                         that showcases the products.</p>
                     <button>View Page</button>
+                   </div>
                 </div>
             </div>
         </div>
@@ -55,7 +60,7 @@
     <!-- End of My work section -->
 
     <!-- About section -->
-    <section>
+    <section class="about">
         <div class="container">
             <h2>About Me</h2>
             <p>I'm Andreas Gramstad, a 22-year-old front-end development student at Noroff and a creative professional with a passion for blending design and technology. Currently, I work part time at one of the leading advertising agencies in the Stavanger area, where I work on a lot of different projects. With many years of experience in photo manipulation, 3D design, and animation, I have a built a strong foundation in creating visually appealing and engaging content. Recently, I've been expanding my competence to include front-end coding and web design projects, further broadening my creative horizons. I love turning ideas into beautiful, functional designs and am always excited to tackle new challenges.</p>
@@ -64,24 +69,32 @@
     <!-- End of About section -->
 
     <!-- Contact section -->
-    <section>
-        <div class="container">
-            <h2>Get in touch</h2>
-            <p>Have a project in mind or need a non-binding offer for a front-end development or design task? Feel free to reach out. I’m here to help bring your ideas to life and am always excited to discuss new opportunities.</p>
+    <section class="contact-section">
+        <div class="container form-container">
+            <div>
+                <h2>Get in touch</h2>
+            <p class="subhead">Have a project in mind or need a non-binding offer for a front-end development or design task? Feel free to reach out. I’m here to help bring your ideas to life and am always excited to discuss new opportunities.</p>
+            </div>
             <form action="/submit_form" method="post">
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name" required><br><br>
+               <div class="form-content">
+                    <div class="left-col">
+                        <label for="name">Name:</label><br>
+                        <input type="text" id="name" name="name" required><br><br>
+                
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email" required><br><br>
+                
+                        <label for="phone">Phone:</label><br>
+                        <input type="tel" id="phone" name="phone" required><br><br>
+                    </div>
+            
+                    <div class="right-col">
+                        <label for="message">Message:</label><br>
+                        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+                    </div>
+               </div>
         
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email" required><br><br>
-        
-                <label for="phone">Phone:</label><br>
-                <input type="tel" id="phone" name="phone" required><br><br>
-        
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
-        
-                <input type="submit" value="Submit">
+                <input class="btn" type="submit" value="Submit">
             </form>
         </div>
     </section>

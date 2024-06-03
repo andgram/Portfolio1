@@ -1,0 +1,283 @@
+/* ====================
+   global styles
+   ==================== */
+
+   :root {
+    --clr-primary-600: #1C1C1C;
+    --clr-primary-700: #000;
+  
+    --clr-contrast-400: linear-gradient(90deg, #202689, #2C72F6);
+  
+    --ff-primary: 'avenir', sans-serif;
+  
+    --fs-300: clamp(1rem, 0.9565rem + 0.2174vw, 1.125rem);
+    --fs-400: clamp(1.2rem, 1.0959rem + 0.5207vw, 1.4994rem);
+    --fs-500: clamp(1.44rem, 1.2457rem + 0.9717vw, 1.9988rem);
+    --fs-600: clamp(1.7281rem, 1.4025rem + 1.6283vw, 2.6644rem);
+    --fs-700: clamp(2.0738rem, 1.5596rem + 2.5707vw, 3.5519rem);
+    --fs-800: clamp(2.4881rem, 1.7066rem + 3.9076vw, 4.735rem);
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: var(--ff-primary);
+    font-weight: 300;
+    font-size: var(--fs-300);
+    line-height: 1.6;
+    overflow-x: hidden;
+    background-color: var(--clr-neutral-200);
+  }
+  
+  body,
+  h1,
+  h2,
+  h3,
+  p {
+    margin: 0;
+  }
+  
+  /* ====================
+         typography
+         ==================== */
+  
+  h1 {
+    font-family: var(--ff-primary);
+  }
+  
+  h1,
+  h2,
+  h3 {
+    line-height: 1;
+  }
+  
+  h2,
+  h3,
+  p {
+    margin-bottom: 1em;
+  }
+  
+  h1 {
+    margin-top: 2.5rem;
+    font-size: var(--fs-800);
+    font-weight: 500;
+  }
+  
+  h2 {
+    font-size: var(--fs-600);
+    font-weight: 500;
+  }
+  
+  h3 {
+    font-size: var(--fs-400);
+    font-weight: 500;
+  }
+  
+  .subhead {
+    font-size: var(--fs-400);
+    font-weight: 300;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  a {
+    text-decoration: none;
+    font-size: var(--fs-300);
+  }
+  
+  /* ====================
+       Layout
+       ==================== */
+  
+  section,
+  main {
+    padding: 4rem 0;
+  }
+  
+  .container {
+    margin-inline: auto;
+    width: min(90%, 70.5rem);
+  }
+  
+
+  @media (min-width: 40em) {
+    section,
+    main {
+      padding: 7rem 0;
+    }
+  }
+  
+  /* ====================
+    Images
+   ==================== */
+  
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* ====================
+    Button
+   ==================== */
+
+   button, .btn {
+    padding: 0.2em 1.8em;
+    font-size: 16px;
+    font-weight: 300;
+    background: var(--clr-contrast-400);
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+   }
+  
+
+  /* ====================
+    Hero section
+   ==================== */
+
+   .hero {
+    background-image: url(images/hero.jpg);
+    background-size: cover;
+    background-position: left center;
+    color: #fff;
+   }
+
+   .hero button {
+    padding: 0.2em 3em;
+   }
+
+   .hero p {
+    margin-top: 1em;
+    font-weight: 300;
+   }
+
+   .hero .logo {
+    position: absolute;
+    top: 20px;
+   }
+
+   /* ====================
+    Work section
+   ==================== */
+
+  .work {
+    background: var(--clr-primary-600);
+    color: #fff;
+  }
+
+  .work h2 {
+    text-align: center;
+  }
+
+  .cards {
+    display: flex;
+    gap: 1em;
+  }
+
+  .card {
+    background: var(--clr-primary-700);
+    width: 30%;
+  }
+
+  .card h3 {
+    margin-top: 1em;
+  }
+
+  .card div {
+    padding: 0 1.2em;
+  }
+
+  .card button {
+    margin-bottom: 2em;
+  }
+
+  .card img {
+    width: 100%;
+  }
+
+  /* ====================
+    About section
+   ==================== */
+
+  .about {
+    background: var(--clr-primary-700);
+    color: #fff;
+    text-align: center;
+  }
+  
+
+  /* ====================
+    Contact section
+   ==================== */
+
+   .contact-section {
+    background: url(images/contact-bg.jpg);
+    background-size: cover;
+    color: #fff;
+   }
+
+   .contact-section h2, .contact-section .subhead {
+    text-align: center;
+   }
+
+   .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+
+   .contact-section form {
+    
+    background: rgba(0, 0, 0, 0.6);
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    width: 70%;
+    margin-top: 2em;
+   }
+
+   .contact-section form .form-content {
+    display: flex;
+    gap: 3em;
+    justify-content: center;
+    flex-wrap: wrap;
+   }
+
+   .contact-section form .form-content input {
+    border-radius: 5px;
+    border: none;
+   }
+
+   textarea {
+    height: 75%;
+    border-radius: 5px;
+    border: none;
+   }
+
+
+  /* ====================
+    footer
+   ==================== */
+
+   footer {
+    background: var(--clr-primary-600);
+    color: #fff;
+    padding: 0.8em;
+   }
+
+   footer div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   }
+
+  
