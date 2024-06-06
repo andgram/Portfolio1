@@ -157,6 +157,11 @@
     padding: 0.2em 3em;
    }
 
+   .hero h1 {
+    margin: 0;
+    animation: slideInFromLeft 1s ease-out forwards, fadeIn 1s ease-out forwards;
+   }
+
    .hero .subhead {
     margin-top: 1em;
     font-weight: 300;
@@ -173,19 +178,21 @@
 
    .hero-content-container {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
    }
 
-   #animationCanvas {
-    width: 400px; 
-    height: 400px;
-    animation: 2s scaleIn forwards, 2s fadeIn forwards;
-  }
+   .logo-icon-1 {
+    width: 40%;
+    height: 40%;
+    animation: scaleIn 1s ease-out forwards, fadeIn 1s ease-out forwards;
+   }
 
-  @media (max-width: 50em) {
-    #animationCanvas {
+   @media (max-width: 50em) {
+    .logo-icon-1 {
       display: none;
     }
-  }
+   }
 
    /* ====================
     Work section
@@ -378,7 +385,7 @@
    
 @keyframes scaleIn {
   0% {
-    transform: scale(1.4);
+    transform: scale(1.2);
   }
   100% {
     transform: scale(1);
@@ -391,6 +398,17 @@
   }
   100% {
     opacity: 1;
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+      transform: translateX(-30%);
+      opacity: 0;
+  }
+  100% {
+      transform: translateX(0);
+      opacity: 1;
   }
 }
 
