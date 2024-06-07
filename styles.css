@@ -8,7 +8,7 @@
   
     --clr-contrast-400: linear-gradient(90deg, #202689, #2C72F6);
   
-    --ff-primary: 'avenir', sans-serif;
+    --ff-primary: 'Poppins', sans-serif;
   
     --fs-300: clamp(1rem, 0.9565rem + 0.2174vw, 1.125rem);
     --fs-400: clamp(1.2rem, 1.0959rem + 0.5207vw, 1.4994rem);
@@ -26,7 +26,7 @@
   
   body {
     font-family: var(--ff-primary);
-    font-weight: 300;
+    font-weight: 200;
     font-size: var(--fs-300);
     line-height: 1.6;
     overflow-x: hidden;
@@ -79,7 +79,7 @@
   
   .subhead {
     font-size: var(--fs-400);
-    font-weight: 300;
+    font-weight: 200;
   }
   
   .text-center {
@@ -130,7 +130,7 @@
    button, .btn {
     padding: 0.2em 1.8em;
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 200;
     background: var(--clr-contrast-400);
     border: none;
     color: #fff;
@@ -164,7 +164,7 @@
 
    .hero .subhead {
     margin-top: 1em;
-    font-weight: 300;
+    font-weight: 200;
    }
 
    .hero .logo {
