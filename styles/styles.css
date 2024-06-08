@@ -149,7 +149,7 @@
    ==================== */
 
    .hero {
-    background: url(images/bg.jpg);
+    background: url(../images/bg.jpg);
     background-size: cover;
     color: #fff;
    }
@@ -284,7 +284,7 @@
    ==================== */
 
    .contact-section {
-    background: url(images/contact-bg.jpg);
+    background: url(../images/contact-bg.jpg);
     background-size: cover;
     color: #fff;
    }
@@ -374,6 +374,10 @@
 
    footer p {
     margin: 0;
+   }
+
+   footer .footer-email {
+    font-size: var(--fs-300)
    }
 
 
